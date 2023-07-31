@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 08</title>
+  <script>  
+    a=prompt("Enter Radius Value","");
+    
+    b= 22/7*Number(a)*Number(a);
+    
+    document.write("Area of the circle is : ",b);
+    
+    </script>
+</head>
+<body>
+  <br><button id="redBtn">Red</button>
+  <button id="greenBtn">Green</button>
+  <button id="blueBtn">Blue</button>
+
+  <script>
+    
+    function changeBackgroundColor(color) {
+      document.body.style.backgroundColor = color;
+    }
+
+      
+    document.getElementById('redBtn').addEventListener('mouseover', function() {
+      changeBackgroundColor('red');
+    });
+
+    document.getElementById('redBtn').addEventListener('mouseout', function() {
+      changeBackgroundColor('white');  
+    });
+
+      
+    document.getElementById('greenBtn').addEventListener('mouseover', function() {
+      changeBackgroundColor('green');
+    });
+
+    document.getElementById('greenBtn').addEventListener('mouseout', function() {
+      changeBackgroundColor('white');  
+    });
+      document.getElementById('blueBtn').addEventListener('mouseover', function() {
+      changeBackgroundColor('blue');
+    });
+
+    document.getElementById('blueBtn').addEventListener('mouseout', function() {
+      changeBackgroundColor('white');  
+    });
+
+  </script>
+
+  </body>
+</html>
+
+     
